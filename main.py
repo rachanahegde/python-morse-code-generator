@@ -58,7 +58,7 @@ morse_code_dict = {
     '$': '...-..-',
     '@': '.--.-.',
     '¿': '..-.-',
-    '¡': '--...-'
+    '¡': '--...-',
 }
 
 ### Finish adding to the dictionary
@@ -80,6 +80,7 @@ def morse_code(text_string):
             result += " "
     except KeyError:
         print("That is not valid input.")
+        exit(0)
     return result
 
 print(f"Here is your string in morse code: {morse_code(text_string)}")
